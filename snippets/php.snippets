@@ -1,7 +1,9 @@
+snippet phpe
+	<?php echo ${1}; ?>
 snippet php
 	<?php
 	${1}
-snippet pphp
+snippet phpp
 	<?php
 	${1}
 	?>
@@ -210,6 +212,13 @@ snippet fun
 	${1:public }function ${2:FunctionName}(${3}) {
 		${4:// code...}
 	}
-# $... = array (...)
+
+# Array
 snippet array
-	$${1:arrayName} = array('${2}' => ${3});${4}
+	array(
+		${1}
+	);${2}
+
+snippet arr
+	array(${1});${2}
+
